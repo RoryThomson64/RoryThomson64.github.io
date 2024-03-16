@@ -12,7 +12,7 @@ export const Experiment = () => {
         context!.fillStyle = "red";
         context?.fillRect(0, 0, w, h);
 
-    }, [])
+    }, [h, w])
 
     return (
         <>
