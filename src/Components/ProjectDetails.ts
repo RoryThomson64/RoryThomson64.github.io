@@ -20,7 +20,7 @@ export const ProjectDetails: Project[] = [
         link: "https://www.isim.co.nz/ec145"
     },
     {
-        name: "GTN650 for EC145",
+        name: "Engine Information Systems (EIS) for MD530f",
         image: "https://storage.googleapis.com/production-ipage-v1-0-4/404/208404/g9KFuHHU/71e64337ffb7480baa6194b3b163621b",
         link: "https://www.isim.co.nz/md500"
     }

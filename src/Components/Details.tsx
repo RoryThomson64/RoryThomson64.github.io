@@ -58,7 +58,7 @@ export const Details = () => {
                         <tr>
                             <td>
                                 <h3>
-                                    Favourite Projects
+                                    Key Projects
                                 </h3>
                                 <div className="skillTable">
 
