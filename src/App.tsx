@@ -8,13 +8,14 @@ function App() {
 
   return (
     <>
-      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<div>Projects</div>} />
         <Route path="/contacts" element={<div>contacts</div>} />
 
       </Routes>
+      <NavBar />
+
     </>
   )
 }
