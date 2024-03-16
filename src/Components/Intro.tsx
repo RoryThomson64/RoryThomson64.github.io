@@ -1,5 +1,5 @@
 // import introImage from '../assets/steven.png'
-import introImage from '../assets/Me.jpg'
+import introImage from '../assets/Me.avif'
 import { useAppSelector } from './Redux/Hooks';
 export const Intro = () => {
 
