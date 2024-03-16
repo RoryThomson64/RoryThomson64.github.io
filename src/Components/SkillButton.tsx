@@ -1,4 +1,4 @@
-import { skill } from "./Details"
+import { skill } from "./SkillDetails"
 export const SkillButton = ({ skill }: { skill: skill }) => {
 
     // style={{

@@ -60,7 +60,7 @@ export const Details = () => {
                                 <table>
                                     <tbody>
                                         <tr className="skillTable">
-                                            {skills.Languages.flatMap((skill, index) => {
+                                            {skills.Languages.flatMap((skill) => {
                                                 return (
                                                     < SkillButton skill={skill} />
                                                 )
@@ -89,7 +89,7 @@ export const Details = () => {
                                 <table>
                                     <tbody>
                                         <tr className="skillTable">
-                                            {skills.Frameworks_Libraries.flatMap((skill, index) => {
+                                            {skills.Frameworks_Libraries.flatMap((skill) => {
                                                 return (
                                                     < SkillButton skill={skill} />
                                                 )
@@ -107,7 +107,7 @@ export const Details = () => {
                                 <table>
                                     <tbody>
                                         <tr className="skillTable">
-                                            {skills.Tools.flatMap((skill, index) => {
+                                            {skills.Tools.flatMap((skill) => {
                                                 return (
                                                     < SkillButton skill={skill} />
                                                 )

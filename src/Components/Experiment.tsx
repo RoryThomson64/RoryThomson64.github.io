@@ -1,6 +1,5 @@
-import { Layer, Rect, Stage } from "react-konva"
-import { Title } from "./KonvaHome/Title"
-import { LegacyRef, useEffect, useRef } from "react"
+
+import { useEffect, useRef } from "react"
 
 export const Experiment = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null)
