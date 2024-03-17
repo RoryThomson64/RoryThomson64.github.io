@@ -6,6 +6,7 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
     //     backgroundRepeat: "no-repeat",
     //     backgroundSize: "contain",
     // }}
+    console.log(skill.highContrast)
     return (
         <>
             <style>
@@ -17,6 +18,12 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
                 height:7.5rem;
                 transition: opacity 300ms, filter 300ms;
             }
+            .highContrast{
+                filter: brightness(1.5);
+            }
+            .invert{
+                filter: invert(1);
+            }
             .container:hover img{
                 opacity: 25%;
                 filter: contrast(0.5);
@@ -27,7 +34,7 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
                 width:7.5rem;
                 height:7.5rem;
                 #background-color: #222329;
-                background-color: #232330;
+                #background-color: #232330;
 
                 
                 border-radius: 25%;
@@ -65,7 +72,7 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
             `}
             </style>
             <div className="container" >
-                <img src={skill.image}></img>
+                <img className={skill.highContrast ? "highContrast" : skill.invert ? "invert" : "lowContrast"} src={skill.image}></img>
                 <div className="overlay">
                     <div className="text">
                         {skill.name}

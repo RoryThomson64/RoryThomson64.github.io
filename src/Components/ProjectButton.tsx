@@ -8,10 +8,10 @@ export const ProjectButton = ({ project }: { project: Project }) => {
             <style>
                 {`
             .projectContainer img{
-
                 object-fit: contain;
-                width:17rem;
+                width:16rem;
                 height:11.25rem;
+                border-radius:20%;
                 transition: opacity 300ms, filter 3000ms;
             }
             .projectContainer:hover img{
@@ -23,6 +23,8 @@ export const ProjectButton = ({ project }: { project: Project }) => {
                 position:relative;
                 width:17rem;
                 height:11.25rem;
+                margin: 0.5rem;
+                
             }
             
 

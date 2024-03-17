@@ -2,6 +2,8 @@ export type skill = {
     name: string,
     level: string,
     image?: string | undefined,
+    highContrast?: boolean,
+    invert?: boolean
 }
 export type skillList = {
     Languages: skill[],
@@ -106,17 +108,20 @@ export const skills: skillList = {
         {
             name: "Express.JS",
             level: "Intermediate",
-            image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+            image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+            invert: true
         },
         {
             name: "THREE.JS",
             level: "Beginner",
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/1024px-Three.js_Icon.svg.png"
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/1024px-Three.js_Icon.svg.png",
+            invert: true
         },
         {
             name: "Flask",
             level: "Beginner",
-            image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg"
+            image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
+            invert: true
         }
 
 
@@ -125,12 +130,16 @@ export const skills: skillList = {
         {
             name: "Node.JS",
             level: "Intermediate",
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1920px-Node.js_logo.svg.png"
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1920px-Node.js_logo.svg.png",
+            highContrast: true
+
         },
         {
             name: "SQLite",
             level: "Intermediate",
-            image: "https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg"
+            image: "https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg",
+            highContrast: true
+
         },
         {
             name: "Linux",
@@ -140,12 +149,13 @@ export const skills: skillList = {
         {
             name: "Unreal Engine 5",
             level: "Intermediate",
-            image: "https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg"
+            image: "https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg",
+            invert: true
         },
         {
             name: "Git",
             level: "Intermediate",
-            image: "https://seeklogo.com/images/G/git-logo-CD8D6F1C09-seeklogo.com.png"
+            image: "https://seeklogo.com/images/G/git-logo-CD8D6F1C09-seeklogo.com.png",
         }
 
     ]

@@ -13,6 +13,7 @@ export const Intro = () => {
                 .Intro {
                     color: ${style.HeaderText.Colour};
                     background-color: ${style.Container.Colour};
+                    border-radius:10%;
                 }
 
                 .IntroContent {
