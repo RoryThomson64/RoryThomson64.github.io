@@ -6,7 +6,7 @@ export const NavBar = () => {
             <style>
                 {`
                 nav {
-                    background-color: #f5f5f5;
+                    background-color: #1B1B1F;
                     height: 3rem;
                     width: 100%;
                     position: fixed;
@@ -16,17 +16,20 @@ export const NavBar = () => {
                     align-items: center;
                     justify-content: space-evenly;
                     padding: 0 0rem;
-                    box-shadow: 0 0 0.5rem black;
+                    border-bottom-style:solid;
+                    border-bottom-color: black;
+                    border-bottom-width: 2px;
+                    box-shadow: 0 0 3rem black;
                 }
                 nav .link {
-                    color: black;
+                    color: white;
                     text-decoration: none;
                     font-size: 1.2rem;
                     font-weight: bold;
                     transition: filter 300ms;
                 }
                 nav .link:hover {
-                    filter: drop-shadow(0 0 0.75rem black);
+                    filter: drop-shadow(0 0 0.75rem red);
                 }
             `}
             </style>

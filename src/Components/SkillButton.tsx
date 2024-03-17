@@ -15,7 +15,7 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
                 object-fit: contain;
                 width:7.5rem;
                 height:7.5rem;
-                transition: opacity 300ms, filter 3000ms;
+                transition: opacity 300ms, filter 300ms;
             }
             .container:hover img{
                 opacity: 25%;
@@ -26,6 +26,11 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
                 position:relative;
                 width:7.5rem;
                 height:7.5rem;
+                #background-color: #222329;
+                background-color: #232330;
+
+                
+                border-radius: 25%;
             }
             
 
@@ -35,7 +40,7 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
             
 
             .text {
-                color: black;
+                color: white;
                 font-size: 16px;
                 position: absolute;
                 top: 50%;
