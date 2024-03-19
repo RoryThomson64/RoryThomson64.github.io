@@ -14,6 +14,9 @@ export const Contact = () => {
         <a href="https://www.linkedin.com/in/rory-t-15b9bb238">
             LinkedIn
         </a>
+        <a href="https://github.com/RoryThomson64">
+            Github
+        </a>
 
 
     </>)
