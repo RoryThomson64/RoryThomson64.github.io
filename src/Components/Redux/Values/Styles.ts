@@ -14,10 +14,15 @@ export const styles = {
         },
         Container: {
             // Colour: "#f5f5f5"
-            Colour: "#202127"
+            Colour: "hsl(231, 10%, 14%)"
         },
         Background: {
-            Colour: "#1B1B1F"
+            Colour: "hsl(240, 7%, 11%)"
+        },
+        Details: {
+            shadowColour: "hsl(240, 10%, 10%)",
+            hoverVioletShadowColour: "hsl(280, 40%, 40%)",
+            hoverCyanShadowColour: "hsl(220, 50%, 40%)",
         }
     }
 }

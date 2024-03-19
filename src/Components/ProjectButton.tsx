@@ -1,18 +1,22 @@
 import { Project } from "./ProjectDetails"
+import { useAppSelector } from "./Redux/Hooks"
 
 
 export const ProjectButton = ({ project }: { project: Project }) => {
-
+    const style = useAppSelector((state) => {
+        return state.style.Details
+    })
     return (
         <>
             <style>
                 {`
             .projectContainer img{
                 object-fit: contain;
-                width:16rem;
+                #width:16rem;
                 height:11.25rem;
-                border-radius:20%;
                 transition: opacity 300ms, filter 3000ms;
+                border-radius:20%;
+
             }
             .projectContainer:hover img{
                 opacity: 25%;
@@ -20,10 +24,13 @@ export const ProjectButton = ({ project }: { project: Project }) => {
                 
             }
             .projectContainer{
+                margin:0.5rem;
                 position:relative;
-                width:17rem;
+                #width:17rem;
                 height:11.25rem;
                 margin: 0.5rem;
+                box-shadow: 10px 10px 10px ${style.shadowColour};
+                border-radius:20%;
                 
             }
             

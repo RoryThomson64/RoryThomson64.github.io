@@ -26,10 +26,18 @@ export const NavBar = () => {
                     text-decoration: none;
                     font-size: 1.2rem;
                     font-weight: bold;
-                    transition: filter 300ms;
+                    padding:0.4rem;
+                    border:solid;
+                    border-radius:10%;
+                    border-width:1px;
+                    border-color: #1B1B1F;
+                    transition: filter 100ms;
                 }
                 nav .link:hover {
-                    filter: drop-shadow(0 0 0.75rem red);
+                    border-color:#646cff;
+                    color:#bcc0ff;
+                    box-shadow:0 0 1rem #646cff;
+                    filter: drop-shadow(0 0 1rem #646cff);
                 }
             `}
             </style>

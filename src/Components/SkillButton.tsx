@@ -1,6 +1,10 @@
+import { useAppSelector } from "./Redux/Hooks"
 import { skill } from "./SkillDetails"
 export const SkillButton = ({ skill }: { skill: skill }) => {
 
+    const style = useAppSelector((state) => {
+        return state.style.Details
+    })
     // style={{
     //     backgroundImage: `url(${skill.image})`,
     //     backgroundRepeat: "no-repeat",
@@ -17,6 +21,8 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
                 width:7.5rem;
                 height:7.5rem;
                 transition: opacity 300ms, filter 300ms;
+                border-radius: 25%;
+
             }
             .highContrast{
                 filter: brightness(1.5);
@@ -29,15 +35,24 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
                 filter: contrast(0.5);
                 
             }
+            .container:hover{
+                #box-shadow: 5px 5px 20px ${style.hoverVioletShadowColour};
+                box-shadow: -7.5px -7.5px 60px ${style.hoverCyanShadowColour},
+                7.5px 7.5px 60px ${style.hoverVioletShadowColour};
+
+
+            }
             .container{
+                background-color:hsl(240, 16%, 16%);
+                margin:0.5rem;
                 position:relative;
                 width:7.5rem;
                 height:7.5rem;
                 #background-color: #222329;
                 #background-color: #232330;
-
-                
+                box-shadow: 5px 5px 20px ${style.shadowColour};
                 border-radius: 25%;
+                transition: 0.5s ease;
             }
             
 

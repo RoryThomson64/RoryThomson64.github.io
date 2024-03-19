@@ -17,7 +17,8 @@ export const Intro = () => {
             <style>
                 {`
                 .Intro {
-                    color: ${style.HeaderText.Colour};
+                    color: ${style.HeaderText.Colour} ;
+                    
                     background-color: ${style.Container.Colour};
                     border-radius:10%;
                 }
@@ -25,11 +26,13 @@ export const Intro = () => {
                 .IntroContent {
                     display: flex;
                     align-items: center;
+
                 }
 
                 .Intro h1 {
                     font-size: 2rem;
                     margin: 2rem;
+                    
                 }
                 
                 .Intro p {
@@ -37,18 +40,20 @@ export const Intro = () => {
                     font-size: ${style.BodyText.Size};
                     margin: 5rem ;
                 }
+                
                 .Intro img{
-                    max-width: 15rem;
                     border-radius: 50%;
                     border: 1px solid black;
-                    margin: 1rem 5rem;
-                    transition: filter 300ms
+                    margin: 5rem 5rem;
+                    max-width: 15rem;
+
+                     box-shadow: -10px -10px 50px ${style.Details.hoverCyanShadowColour},
+                                 10px 10px 50px ${style.Details.hoverVioletShadowColour};
 
 
                 }
-                .Intro img:hover{
-                    filter: drop-shadow(0 0 0.75rem black);
-                }
+                
+                
             `}
             </style>
             <div className="Intro">

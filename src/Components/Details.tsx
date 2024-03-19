@@ -52,6 +52,7 @@ export const Details = () => {
                 .quadrant{
                     background-color: #232330;
                     border-radius:15%;
+                    box-shadow: 8px 8px 20px hsl(231, 8%, 8%);
                 }
                 
                 
