@@ -7,10 +7,14 @@ export const Contact = () => {
 
         `}
         </style>
-        <h1>
-            Work In Progress, Please Check Back here!
-        </h1>
         <ContactMap />
+        <p>
+            email: rorythomson64@gmail.com
+        </p>
+        <a href="https://www.linkedin.com/in/rory-t-15b9bb238">
+            LinkedIn
+        </a>
+
 
     </>)
 }
