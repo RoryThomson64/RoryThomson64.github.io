@@ -91,6 +91,8 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
                     <div className="text">
                         {skill.name}
                         <br></br>
+                        {`${skill.years} YOE`}
+                        <br></br>
                         {skill.level}
                     </div>
                 </div>
