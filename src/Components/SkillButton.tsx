@@ -36,7 +36,6 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
                 
             }
             .container:hover{
-                #box-shadow: 5px 5px 20px ${style.hoverVioletShadowColour};
                 box-shadow: -7.5px -7.5px 60px ${style.hoverCyanShadowColour},
                 7.5px 7.5px 60px ${style.hoverVioletShadowColour};
 
@@ -52,7 +51,7 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
                 #background-color: #232330;
                 box-shadow: 5px 5px 20px ${style.shadowColour};
                 border-radius: 25%;
-                transition: 0.5s ease;
+                transition: 0.75s ease;
             }
             
 

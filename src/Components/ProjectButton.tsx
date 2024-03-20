@@ -31,7 +31,13 @@ export const ProjectButton = ({ project }: { project: Project }) => {
                 margin: 0.5rem;
                 box-shadow: 10px 10px 10px ${style.shadowColour};
                 border-radius:20%;
+                transition: 0.75s ease;
+
                 
+            }
+            .projectContainer:hover{
+                box-shadow: -7.5px -7.5px 60px ${style.hoverCyanShadowColour},
+                7.5px 7.5px 60px ${style.hoverVioletShadowColour};
             }
             
 

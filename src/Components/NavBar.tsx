@@ -31,13 +31,11 @@ export const NavBar = () => {
                     border-radius:10%;
                     border-width:1px;
                     border-color: #1B1B1F;
-                    transition: filter 100ms;
+                    transition:  500ms;
                 }
                 nav .link:hover {
-                    border-color:#646cff;
-                    color:#bcc0ff;
-                    box-shadow:0 0 1rem #646cff;
-                    filter: drop-shadow(0 0 1rem #646cff);
+                    color: hsl(237, 100%, 70%);
+                    
                 }
             `}
             </style>
