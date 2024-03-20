@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom"
+import { useAppSelector } from "./Redux/Hooks"
 
 export const NavBar = () => {
+    const style = useAppSelector((state) => {
+        return state.style
+    })
     return (
         <>
             <style>
                 {`
                 nav {
-                    background-color: #1B1B1F;
+                    background-color: ${style.Container.Colour};
                     height: 3rem;
                     width: 100%;
                     position: fixed;
@@ -16,10 +20,8 @@ export const NavBar = () => {
                     align-items: center;
                     justify-content: space-evenly;
                     padding: 0 0rem;
-                    border-bottom-style:solid;
-                    border-bottom-color: black;
-                    border-bottom-width: 2px;
-                    box-shadow: 0 0 3rem black;
+
+                    box-shadow: 0 10px 10px hsl(231, 20%, 7%);
                 }
                 nav .link {
                     color: white;

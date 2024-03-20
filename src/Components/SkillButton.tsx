@@ -42,7 +42,7 @@ export const SkillButton = ({ skill }: { skill: skill }) => {
 
             }
             .container{
-                background-color:hsl(240, 16%, 16%);
+                background-color:${style.quadrantBackgroundColour};
                 margin:0.5rem;
                 position:relative;
                 width:7.5rem;
